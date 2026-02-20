@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Backdrop do menu -->
+  <div class="backdrop" data-close-drawer></div>
+
+  <!-- Drawer (menu lateral) -->
+  <aside class="drawer" aria-hidden="true" aria-label="Menu lateral">
+    <div class="drawer__top">
+      <div class="drawer__brand">
+        <span class="drawer__dot"></span>
+        <strong>VICTOR DEV</strong>
+      </div>
+
+      <button class="icon-btn" data-close-drawer aria-label="Fechar menu">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <nav class="drawer__nav" aria-label="Navegação">
+      <a href="#inicio" data-nav>Início</a>
+      <a href="#sobre" data-nav>Sobre</a>
+      <a href="#servicos" data-nav>Serviços</a>
+      <a href="#projetos" data-nav>Projetos</a>
+      <a href="#depoimentos" data-nav>Depoimentos</a>
+      <a href="#contato" data-nav>Contato</a>
+    </nav>
+
+    <div class="drawer__footer">
+      <p class="muted">Disponível para freelas e vagas.</p>
+      <a class="btn btn--primary" href="#contato" data-nav>Fale comigo</a>
+      <div class="drawer__social">
+         <a href="#" aria-label="GitHub"><i class="ri-github-line"></i></a>
+         <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+         <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+     </div>
+    </div>
+  </aside>
+
+  <!-- Header fixo por cima do hero -->
+  <header class="topbar" id="inicio">
+    <div class="container topbar__content">
+      <div class="brand">
+        <span class="brand__dot"></span>
+        <span class="brand__name">VICTOR DEV</span>
+      </div>
+
+      <button class="icon-btn icon-btn--hamb" data-open-drawer aria-label="Abrir menu">
+      <i class="ri-menu-3-line"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Seção inicial">
+    <div class="hero__bg" role="img" aria-label="Fundo do hero"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <div class="hero__box">
+        <h1>OLÁ! SOU VICTOR <span class="accent">DEV</span></h1>
+      </div>
+
+      <p class="hero__subtitle">
+        Bem-vindo ao meu site! Sou desenvolvedor web focado em interfaces modernas,
+        performance e experiências premium.
+      </p>
+
+      <a class="scroll-indicator" href="#sobre" aria-label="Rolar para Sobre">
+        <span class="scroll-indicator__dot"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section about" id="sobre">
+    <div class="container about__grid">
+      <div class="about__text">
+        <div class="section__label">
+          <span class="section__bar"></span>
+          <span>SOBRE MIM</span>
+        </div>
+
+        <p class="lead">
+          Sou um <strong>Desenvolvedor Web</strong> com foco em Front-end (e base em Back-end),
+          criando sites e sistemas rápidos, responsivos e com design elegante.
+        </p>
+
+        <p class="muted">
+          Trabalho com páginas de alta conversão (landing pages), sites institucionais,
+          portfólios, e aplicações web com UI limpa. Se você tem uma ideia ou precisa
+          de um orçamento, me chama.
+        </p>
+
+        <div class="about__actions">
+          <a class="btn btn--primary" href="#contato"><i class="ri-chat-3-line"></i>Solicitar orçamento</a>
+          <a class="btn btn--ghost" href="#" onclick="alert('Aqui você coloca o link do seu CV (PDF).')">
+           <i class="ri-download-2-line"></i> Baixar CV
+          </a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node</span>
+          <span class="chip">SEO</span>
+        </div>
+      </div>
+
+      <div class="about__photo" aria-hidden="true">
+        <!-- “Foto” estilizada (sem imagem externa) -->
+        <div class="portrait">
+          <div class="portrait__shine"></div>
+          <div class="portrait__fade"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS (faixa escura) -->
+  <section class="services" id="servicos" aria-label="Serviços">
+    <div class="container services__grid">
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <span class="ico"><i class="ri-layout-masonry-line"></i></span>
+        </div>
+        <h3>Sites & Landing Pages</h3>
+        <p>
+          Páginas rápidas, responsivas e com foco em conversão.
+          Ideal para arquitetos, empresas e serviços locais.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <span class="ico"><i class="ri-brush-2-line"></i></span>
+        </div>
+        <h3>UI Moderna</h3>
+        <p>
+          Layout premium com hierarquia, tipografia e microinterações.
+          Experiência “clean” no mobile e no desktop.
+        </p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon" aria-hidden="true">
+          <span class="ico"><i class="ri-code-s-slash-line"></i></span>
+        </div>
+        <h3>Sistemas Web</h3>
+        <p>
+          Telas e fluxos para aplicações (login, dashboard, agendamentos),
+          prontos para integrar com back-end.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section__label">
+        <span class="section__bar"></span>
+        <span>TRABALHOS EM DESTAQUE</span>
+      </div>
+
+      <p class="muted section__desc">
+        Alguns projetos recentes com foco em performance, responsividade e identidade visual.
+      </p>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project__thumb project__thumb--1" aria-hidden="true"></div>
+          <div class="project__body">
+            <h3>Landing Page Premium</h3>
+            <p>Layout clean, CTA forte, mobile-first e animações discretas.</p>
+            <div class="project__tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost" href="#" onclick="alert('Coloque o link do projeto aqui!')">Ver projeto</a>
+              <a class="btn btn--primary" href="#contato">Quero um igual</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb project__thumb--2" aria-hidden="true"></div>
+          <div class="project__body">
+            <h3>Site Institucional</h3>
+            <p>Seções completas, SEO básico, navegação fluida e visual consistente.</p>
+            <div class="project__tags">
+              <span class="tag">SEO</span><span class="tag">Responsivo</span><span class="tag">Acessível</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost" href="#" onclick="alert('Coloque o link do projeto aqui!')">Ver projeto</a>
+              <a class="btn btn--primary" href="#contato">Orçamento</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__thumb project__thumb--3" aria-hidden="true"></div>
+          <div class="project__body">
+            <h3>App Web / Dashboard</h3>
+            <p>Componentes, cards, tabelas e layout para sistemas com autenticação.</p>
+            <div class="project__tags">
+              <span class="tag">UI</span><span class="tag">Componentes</span><span class="tag">Fluxos</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost" href="#" onclick="alert('Coloque o link do projeto aqui!')">Ver projeto</a>
+              <a class="btn btn--primary" href="#contato">Vamos criar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section" id="depoimentos">
+    <div class="container">
+      <div class="section__label">
+        <span class="section__bar"></span>
+        <span>DEPOIMENTOS</span>
+      </div>
+
+      <div class="testimonials">
+        <figure class="testimonial">
+          <blockquote>
+            “O site ficou com cara de agência premium. No celular ficou perfeito e rápido.”
+          </blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true"></span>
+            <div>
+              <strong>Cliente A</strong>
+              <span class="muted">Serviços</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial">
+          <blockquote>
+            “Entrega rápida e comunicação fácil. A landing aumentou meus contatos no WhatsApp.”
+          </blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true"></span>
+            <div>
+              <strong>Cliente B</strong>
+              <span class="muted">Negócio local</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact" id="contato">
+    <div class="container contact__grid">
+      <div>
+        <div class="section__label">
+          <span class="section__bar"></span>
+          <span>CONTATO</span>
+        </div>
+
+        <h2 class="contact__title">Vamos tirar seu projeto do papel?</h2>
+        <p class="muted">
+          Me conte o que você precisa (tipo de site, prazo e referências). Eu retorno com
+          uma proposta objetiva.
+        </p>
+
+        <div class="contact__cards">
+          <div class="mini">
+            <strong><i class="ri-whatsapp-line"></i>WhatsApp</strong>
+            <span class="muted">Clique para conversar</span>
+            <a class="mini__link" href="#" onclick="alert('Troque pelo seu link wa.me')"><i class="ri-arrow-right-line"></i>Abrir WhatsApp</a>
+          </div>
+          <div class="mini">
+            <strong><i class="ri-mail-line"></i>E-mail</strong>
+            <span class="muted">Resposta em até 24h</span>
+            <a class="mini__link" href="#" onclick="alert('Troque pelo seu e-mail')"><i class="ri-send-plane-2-line"></i> Enviar e-mail</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" onsubmit="return handleSubmit(event)">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome" placeholder="Seu nome" required />
+        </label>
+
+        <label>
+          <span>Contato (WhatsApp)</span>
+          <input type="tel" name="whats" placeholder="(DDD) 9xxxx-xxxx" required />
+        </label>
+
+        <label>
+          <span>Mensagem</span>
+          <textarea name="msg" rows="5" placeholder="Quero um site para..." required></textarea>
+        </label>
+
+        <button class="btn btn--primary btn--block" type="submit">
+         <i class="ri-send-plane-2-line"></i> Enviar mensagem
+        </button>
+
+        <p class="muted tiny">
+          
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> SEU NOME — Desenvolvedor Web.</p>
+      <a href="#inicio" class="muted"><i class="ri-arrow-up-line"></i>Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
