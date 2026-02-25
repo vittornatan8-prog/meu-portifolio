@@ -14,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <a class="whatsapp-float"href="https://wa.me/55SEUNUMERO?text=Ol%C3%A1!%20Quero%20um%20site%20institucional."target="_blank"rel="noopener"aria-label="Falar no WhatsApp"title="Falar no WhatsApp">
+  <i class="ri-whatsapp-line"></i>
+  </a>
   <!-- Backdrop do menu -->
   <div class="backdrop" data-close-drawer></div>
 
@@ -38,16 +42,10 @@
       <a href="#depoimentos" data-nav>Depoimentos</a>
       <a href="#contato" data-nav>Contato</a>
     </nav>
-
-    <div class="drawer__footer">
-      <p class="muted">Disponível para freelas e vagas.</p>
-      <a class="btn btn--primary" href="#contato" data-nav>Fale comigo</a>
-      <div class="drawer__social">
-         <a href="#" aria-label="GitHub"><i class="ri-github-line"></i></a>
-         <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
-         <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-     </div>
+    <div class="btn-wts">
+      <a href="https://wa.me/5541996436889" target="_blank" class="btn-wts">Fale comigo no WhatsApp</a>
     </div>
+
   </aside>
 
   <!-- Header fixo por cima do hero -->
@@ -107,9 +105,6 @@
 
         <div class="about__actions">
           <a class="btn btn--primary" href="#contato"><i class="ri-chat-3-line"></i>Solicitar orçamento</a>
-          <a class="btn btn--ghost" href="#" onclick="alert('Aqui você coloca o link do seu CV (PDF).')">
-           <i class="ri-download-2-line"></i> Baixar CV
-          </a>
         </div>
 
         <div class="chips">
@@ -122,14 +117,7 @@
         </div>
       </div>
 
-      <div class="about__photo" aria-hidden="true">
-        <!-- “Foto” estilizada (sem imagem externa) -->
-        <div class="portrait">
-          <div class="portrait__shine"></div>
-          <div class="portrait__fade"></div>
-        </div>
-      </div>
-    </div>
+      
   </section>
 
   <!-- SERVIÇOS (faixa escura) -->
@@ -139,7 +127,7 @@
         <div class="service-card__icon" aria-hidden="true">
           <span class="ico"><i class="ri-layout-masonry-line"></i></span>
         </div>
-        <h3>Sites & Landing Pages</h3>
+        <h3>Landing Pages</h3>
         <p>
           Páginas rápidas, responsivas e com foco em conversão.
           Ideal para arquitetos, empresas e serviços locais.
@@ -159,12 +147,12 @@
 
       <article class="service-card">
         <div class="service-card__icon" aria-hidden="true">
-          <span class="ico"><i class="ri-code-s-slash-line"></i></span>
+          <span class="ico"><i class="ri-building-2-line"></i></span>
         </div>
-        <h3>Sistemas Web</h3>
+        <h3>Site Institucional</h3>
         <p>
-          Telas e fluxos para aplicações (login, dashboard, agendamentos),
-          prontos para integrar com back-end.
+         Site profissional com seções completas (sobre, serviços, portfólio e contato),
+        totalmente responsivo e com SEO básico para aparecer no Google.
         </p>
       </article>
     </div>
@@ -186,13 +174,13 @@
         <article class="project">
           <div class="project__thumb project__thumb--1" aria-hidden="true"></div>
           <div class="project__body">
-            <h3>Landing Page Premium</h3>
+            <h3>Landing Page</h3>
             <p>Layout clean, CTA forte, mobile-first e animações discretas.</p>
             <div class="project__tags">
               <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
             </div>
             <div class="project__actions">
-              <a class="btn btn--ghost" href="#" onclick="alert('Coloque o link do projeto aqui!')">Ver projeto</a>
+              <a class="btn btn--ghost" href="#" onclick="https://vittornatan8-prog.github.io/projeto-arquitetura/">Ver projeto</a>
               <a class="btn btn--primary" href="#contato">Quero um igual</a>
             </div>
           </div>
@@ -216,7 +204,7 @@
         <article class="project">
           <div class="project__thumb project__thumb--3" aria-hidden="true"></div>
           <div class="project__body">
-            <h3>App Web / Dashboard</h3>
+            <h3>Site Completo</h3>
             <p>Componentes, cards, tabelas e layout para sistemas com autenticação.</p>
             <div class="project__tags">
               <span class="tag">UI</span><span class="tag">Componentes</span><span class="tag">Fluxos</span>
@@ -247,8 +235,8 @@
           <figcaption>
             <span class="avatar" aria-hidden="true"></span>
             <div>
-              <strong>Cliente A</strong>
-              <span class="muted">Serviços</span>
+              <strong>Sabrina</strong>
+              <span class="muted"></span>
             </div>
           </figcaption>
         </figure>
@@ -260,8 +248,8 @@
           <figcaption>
             <span class="avatar" aria-hidden="true"></span>
             <div>
-              <strong>Cliente B</strong>
-              <span class="muted">Negócio local</span>
+              <strong>Thiago</strong>
+              <span class="muted"></span>
             </div>
           </figcaption>
         </figure>
@@ -286,16 +274,14 @@
 
         <div class="contact__cards">
           <div class="mini">
-            <strong><i class="ri-whatsapp-line"></i>WhatsApp</strong>
-            <span class="muted">Clique para conversar</span>
-            <a class="mini__link" href="#" onclick="alert('Troque pelo seu link wa.me')"><i class="ri-arrow-right-line"></i>Abrir WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=5541996436889" target="_blank"><strong><i class="ri-whatsapp-line"></i>WhatsApp</strong>
           </div>
           <div class="mini">
-            <strong><i class="ri-mail-line"></i>E-mail</strong>
-            <span class="muted">Resposta em até 24h</span>
-            <a class="mini__link" href="#" onclick="alert('Troque pelo seu e-mail')"><i class="ri-send-plane-2-line"></i> Enviar e-mail</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=4x6eE@example.com" target="_blank"><strong><i class="ri-mail-line"></i>E-mail</strong>
           </div>
         </div>
+        
+            
       </div>
 
       <form class="form" onsubmit="return handleSubmit(event)">
@@ -327,8 +313,7 @@
 
   <footer class="footer">
     <div class="container footer__content">
-      <p>© <span id="year"></span> SEU NOME — Desenvolvedor Web.</p>
-      <a href="#inicio" class="muted"><i class="ri-arrow-up-line"></i>Voltar ao topo</a>
+      <p>© <span id="year"></span> Victor Natan — Desenvolvedor Web.</p>
     </div>
   </footer>
 
