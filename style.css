@@ -424,10 +424,11 @@ body{
   text-transform: uppercase;
   margin: 0 0 10px;
   line-height: 1.05;
-  font-size: clamp(28px, 7vw, 52px);
+  font-size: 38px;
 }
 .hero__lead{
   max-width: 56ch;
+  font-size: 16px;
   color: rgba(255,255,255,.78);
   line-height: 1.8;
   margin: 0 0 18px;
@@ -720,7 +721,7 @@ input:focus, textarea:focus{
 /* To top */
 .toTop{
   position:fixed;
-  right: 14px;
+  left: 50%;
   bottom: 16px;
   width: 42px;
   height: 42px;
@@ -731,7 +732,7 @@ input:focus, textarea:focus{
   color: #111;
   background: linear-gradient(180deg, var(--accent2), var(--accent));
   box-shadow: 0 12px 28px rgba(176,122,58,.2);
-  z-index: 40;
+  z-index: 999;
   opacity: .95;
 }
 
@@ -776,7 +777,7 @@ input:focus, textarea:focus{
   .sidemenu__footer{ display:none; }
   .burger{ display:none; }
 
-  @media (min-width: 720px){
+  @media (min-width: 800px){
   .container{
     width: min(var(--max), 100% - 2*var(--pad));
     margin-inline: auto; /* centraliza */
@@ -811,4 +812,41 @@ input:focus, textarea:focus{
     grid-template-columns: 1.1fr .9fr .9fr .9fr;
   }
   .proj img{ height: 140px; }
+
+  .hero__title{ font-size: 42px;}
+  .hero__lead{ font-size: 18px;}
+  .hero__kicker{ font-size: 14px;}
+}
+
+.wpp-float{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+
+  background: linear-gradient(180deg, #25D366, #128C7E);
+  box-shadow: 0 14px 35px rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.12);
+  text-decoration: none;
+}
+
+.wpp-float i{
+  font-size: 38px;  /* tamanho do ícone */
+  color: #f2f2f2;
+  line-height: 1;
+}
+
+@media (hover:hover){
+  .wpp-float{
+    transition: transform .2s ease, filter .2s ease;
+  }
+  .wpp-float:hover{
+    transform: translateY(-3px) scale(1.04);
+    filter: brightness(1.05);
+  }
 }
