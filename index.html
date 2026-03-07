@@ -97,24 +97,25 @@
     <section class="section block" aria-label="Boas-vindas">
       <div class="container center">
         <h2 class="title">WELCOME</h2>
+        <div class="sep"></div>
         <p class="muted maxw">
           Design limpo, tipografia forte e navegação objetiva. Um layout ideal para apresentar serviços, projetos e contato em uma única página.
         </p>
-        <div class="sep"></div>
+        
         <p class="small maxw">
-          Role para ver as seções: Sobre, Serviços, Portfólio e Contato. Tudo otimizado para mobile e totalmente responsivo.
+          
         </p>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="section split" id="about" data-section="about">
-      <div class="split__bg" aria-hidden="true"></div>
-
-      
-      <div class="container split__grid">
-        <div class="split__left">
+      <div class="about__bg" aria-hidden="true"></div>
+      <div class="about__shade" aria-hidden="true"></div>
+      <div class="container about__grid">
+        <div class="about__left">
           <h2 class="title title--left">SOBRE</h2>
+          <div class="sep"></div>
           <p class="muted">
             Eu crio experiências digitais focadas em conversão e credibilidade. Seu site não é só “bonito” — ele precisa comunicar valor,
             guiar o usuário e facilitar o contato.
@@ -124,7 +125,7 @@
           </p>
         </div>
 
-        <div class="split__right card">
+        <div class="about__right card">
           <p class="card__kicker">O melhor de um template “one page”</p>
           <p class="small muted">
             Estrutura direta, blocos bem definidos e foco no que importa: apresentar, provar e converter.
@@ -163,51 +164,62 @@
     <!-- SERVICES -->
     <section class="section services" id="services" data-section="services">
       <div class="services__bg" aria-hidden="true"></div>
+      <div class="container services__wrap">
+        <div class="services__list">
+          <article class="feat">
+            <i class="feat__i ri-smartphone-line" aria-hidden="true"></i>
+            <div class="feat__txt">
+            <h3>Responsivo</h3>
+            <p>Perfeito no celular, tablet e desktop, sem “quebrar” layout.</p>
+            </div>
+          </article>
 
-      <div class="container">
+          <article class="feat">
+            <i class="feat__i ri-layout-masonry-line" aria-hidden="true"></i>
+            <div class="feat__txt">
+            <h3>Layouts únicos</h3>
+            <p>Design sob medida para seu nicho e identidade visual.</p>
+            </div>
+          </article>
+
+          <article class="feat">
+            <i class="feat__i ri-speed-line" aria-hidden="true"></i>
+            <div class="feat__txt">
+            <h3>Otimização</h3>
+            <p>Carregamento rápido, boa estrutura e SEO básico bem feito.</p>
+            </div>
+          </article>
+
+          <article class="feat">
+            <i class="feat__i ri-customer-service-2-line"></i>
+            <div class="feat__txt">
+            <h3>Entrega e suporte</h3>
+            <p>Publicação, ajustes finos e orientações de uso.</p>
+            </div>
+          </article>
+
+          <article class="feat">
+            <i class="feat__i ri-megaphone-line"></i>
+            <div class="feat__txt">
+            <h3>Copy e CTA</h3>
+            <p>Texto direcionado para conversão e contato com clareza.</p>
+            </div>
+          </article>
+
+          <article class="feat">
+            <i class="feat__i ri-shield-check-line"></i>
+            <div class="feat__txt">
+            <h3>Credibilidade</h3>
+            <p>Seção de provas: projetos, depoimentos e diferenciais.</p>
+            </div>
+          </article>
+        </div>
         <div class="services__head">
           <h2 class="title title--right">SERVIÇOS</h2>
-          <p class="muted maxw">
+          <div class="sep"></div>
+          <p class="muted-maxw">
             Pacotes pensados para posicionamento premium: visual consistente, conteúdo bem distribuído e performance.
           </p>
-        </div>
-
-        <div class="grid">
-          <article class="feat">
-            <div class="feat__icon">▢</div>
-            <h3>Responsivo</h3>
-            <p class="small muted">Perfeito no celular, tablet e desktop, sem “quebrar” layout.</p>
-          </article>
-
-          <article class="feat">
-            <div class="feat__icon">∞</div>
-            <h3>Layouts únicos</h3>
-            <p class="small muted">Design sob medida para seu nicho e identidade visual.</p>
-          </article>
-
-          <article class="feat">
-            <div class="feat__icon">⚙</div>
-            <h3>Otimização</h3>
-            <p class="small muted">Carregamento rápido, boa estrutura e SEO básico bem feito.</p>
-          </article>
-
-          <article class="feat">
-            <div class="feat__icon">☁</div>
-            <h3>Entrega e suporte</h3>
-            <p class="small muted">Publicação, ajustes finos e orientações de uso.</p>
-          </article>
-
-          <article class="feat">
-            <div class="feat__icon">⌁</div>
-            <h3>Copy e CTA</h3>
-            <p class="small muted">Texto direcionado para conversão e contato com clareza.</p>
-          </article>
-
-          <article class="feat">
-            <div class="feat__icon">✦</div>
-            <h3>Credibilidade</h3>
-            <p class="small muted">Seção de provas: projetos, depoimentos e diferenciais.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -219,6 +231,7 @@
       <div class="container split__grid">
         <div class="split__left">
           <h2 class="title title--left">PORTFÓLIO</h2>
+          <div class="sep"></div>
           <p class="muted">
             Uma amostra de projetos recentes. Substitua as imagens pelos seus thumbnails e, se quiser, adicione filtros por categoria.
           </p>
@@ -254,8 +267,15 @@
       <div class="contact__bg" aria-hidden="true"></div>
 
       <div class="container contact__grid">
+        <div class="contact__side">
+          <h3 class="title title--right">Fale comigo</h3>
+          <div class="sep"></div>
+          <p class="muted">
+            Quer uma landing page premium ou um site institucional? Me diga seu nicho, objetivo e prazo — eu retorno com uma proposta.
+          </p>
+        </div>
         <div class="contact__form card">
-          <h2 class="title title--left">CONTATO</h2>
+          <h2 class="title__contact">CONTATO</h2>
 
           <form class="form" id="contactForm">
             <div class="row">
@@ -284,27 +304,7 @@
           </form>
         </div>
 
-        <div class="contact__side">
-          <h3 class="title title--right">Fale comigo</h3>
-          <p class="muted">
-            Quer uma landing page premium ou um site institucional? Me diga seu nicho, objetivo e prazo — eu retorno com uma proposta.
-          </p>
-
-          <div class="info">
-            <div class="info__item">
-              <span class="info__k">Endereço</span>
-              <span class="info__v">Curitiba/PR</span>
-            </div>
-            <div class="info__item">
-              <span class="info__k">E-mail</span>
-              <span class="info__v">contato@seudominio.com</span>
-            </div>
-            <div class="info__item">
-              <span class="info__k">Telefone</span>
-              <span class="info__v">(41) 99999-9999</span>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
 

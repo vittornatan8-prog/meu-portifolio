@@ -83,3 +83,19 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.6 });
 
 sections.forEach(s => s && obs.observe(s));
+
+const toTop = document.querySelector(".toTop");
+
+function toggleToTop() {
+  const showAfter = 300; // px (ajuste)
+  if (!toTop) return;
+
+  if (window.scrollY > showAfter) {
+    toTop.classList.add("show");
+  } else {
+    toTop.classList.remove("show");
+  }
+}
+
+window.addEventListener("scroll", toggleToTop, { passive: true });
+toggleToTop(); // roda ao carregar
