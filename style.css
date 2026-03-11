@@ -351,9 +351,9 @@ body{
   font-weight: 400;
   margin: 0 0 12px;
 }
-.muted-maxw{ color: var(--muted);  line-height: 1.8; ; font-size: 12px; max-width: 58ch; margin-inline:auto; }
-.muted{ color: var(--muted); line-height: 1.8;  font-size: 12px;}
-.small{ font-size: 13px; line-height: 1.7; }
+.muted-maxw{ color: var(--muted);  line-height: 1.8; ; font-size: 18px; max-width: 58ch; margin-inline:auto; }
+.muted{ color: var(--muted); line-height: 1.8;  font-size: 18px;}
+.small{ font-size: 14px; line-height: 1.7; }
 
 /* Buttons */
 .btn{
@@ -479,7 +479,7 @@ body{
   background: linear-gradient(180deg, rgba(26,26,26,.86), rgba(17,17,17,.92));
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 18px;
+  padding: 20px 20px;
   
 }
 .split {
@@ -597,13 +597,13 @@ body{
   font-family: var(--title);
   letter-spacing: .22em;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(255,255,255,.92);
 }
 .feat__txt p{
   margin:0;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.65;
   color: rgba(255,255,255,.68);
   max-width: 34ch;
@@ -624,6 +624,7 @@ body{
 .services__head{
   text-align: center;
   align-self: start;
+  margin-bottom: 30px;
 }
 
 .services__head .muted{
@@ -644,28 +645,26 @@ body{
   .services__list{
     gap: 14px 28px;
     grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 colunas x 3 linhas */
+    background: rgba(26,26,26,.86);
+    padding: 24px 28px;
+    border-radius: 10px;
   }
   .services__head .title{
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: .34em;
   }
   .services__head .muted{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
     max-width: 52ch;
   }
-
-  /* divisória vertical no meio (igual ao template) */
-  .services__wrap::before{
-    content:"";
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    right: 38%;
-    width: 100%;
-    border-radius: 20px;
-    background: linear-gradient(180deg, rgba(26,26,26,.86), rgba(17,17,17,.92));
+  .muted-maxw {
+    max-width: 40ch;
   }
+  .services__head {order: 2;}
+  .services__list {order: 1;}
+
+  
 }
 
 
@@ -821,7 +820,7 @@ input:focus, textarea:focus{
   letter-spacing: .22em;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   color: rgba(255,255,255,.88);
 }
 .foot__list{
@@ -830,7 +829,7 @@ input:focus, textarea:focus{
 }
 .foot__list a{
   color: rgba(255,255,255,.68);
-  font-size: 12px;
+  font-size: 16px;
   text-decoration:none;
 }
 .foot__list a:hover{ color: rgba(211,154,85,.95); }
@@ -892,7 +891,7 @@ input:focus, textarea:focus{
 }
 
 /* Desktop upgrades (sem perder o mobile-first) */
-@media (min-width: 720px){
+@media (min-width: 800px){
   .page{ padding-top: 0; }
   .topbar{
     width: calc(100% - 84px);
@@ -980,8 +979,8 @@ input:focus, textarea:focus{
   }
   .proj img{ height: 140px; }
 
-  .hero__title{ font-size: 42px;}
-  .hero__lead{ font-size: 18px;}
+  .hero__title{ font-size: 42px; max-width: 100vh;}
+  .hero__lead{ font-size: 18px; max-width: 100vh;}
   .hero__kicker{ font-size: 14px;}
 }
 
